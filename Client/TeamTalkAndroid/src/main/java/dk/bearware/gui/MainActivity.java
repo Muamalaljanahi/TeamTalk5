@@ -300,12 +300,10 @@ extends AppCompatActivity
             }
             break;
             case R.id.action_upload : {
-                if (Permissions.setupPermission(getBaseContext(), this, Permissions.MY_PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE)) {
-                    Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-                    intent.addCategory(Intent.CATEGORY_OPENABLE);
-                    intent.setType("*/*");
-                    Intent i = Intent.createChooser(intent, "File");
-                    startActivityForResult(i, REQUEST_SELECT_FILE);
+                if ((Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) ?
+                    requestMediaPermissions() :
+                    Permissions.READ_EXTERNAL_STORAGE.request(this)) {
+                    fileSelectionStart();
                 }
             }
             break;
@@ -327,12 +325,12 @@ extends AppCompatActivity
 
             case R.id.action_newchannel : {
                 Intent intent = new Intent(MainActivity.this, ChannelPropActivity.class);
-                
+
                 int parent_chan_id = ttclient.getRootChannelID();
                 if(curchannel != null)
                     parent_chan_id = curchannel.nChannelID;
                 intent = intent.putExtra(ChannelPropActivity.EXTRA_PARENTID, parent_chan_id);
-                
+
                 startActivityForResult(intent, REQUEST_NEWCHANNEL);
             }
             break;
@@ -376,7 +374,7 @@ extends AppCompatActivity
     }
 
     CountDownTimer stats_timer = null;
-    
+
     TeamTalkConnection mConnection;
     TeamTalkService ttservice;
     TeamTalkBase ttclient;
@@ -401,7 +399,7 @@ extends AppCompatActivity
         else {
             adjustSoundSystem(prefs);
             if (prefs.getBoolean(Preferences.PREF_SOUNDSYSTEM_BLUETOOTH_HEADSET, false)) {
-                if (Permissions.setupPermission(getBaseContext(), this, Permissions.MY_PERMISSIONS_BLUETOOTH))
+                if (Permissions.BLUETOOTH.request(this))
                     ttservice.watchBluetoothHeadset();
             }
             else ttservice.unwatchBluetoothHeadset();
@@ -609,12 +607,12 @@ extends AppCompatActivity
     FilesSectionFragment filesFragment;
 
     public class SectionsPagerAdapter extends FragmentPagerAdapter implements ViewPager.OnPageChangeListener {
-        
+
         public static final int CHANNELS_PAGE   = 0,
                                 CHAT_PAGE       = 1,
                                 MEDIA_PAGE      = 2,
                                 FILES_PAGE      = 3,
-                                
+
                                 PAGE_COUNT      = 4;
 
         public SectionsPagerAdapter(FragmentManager fm) {
@@ -684,6 +682,30 @@ extends AppCompatActivity
         @Override
         public void onPageScrollStateChanged(int state) {
         }
+    }
+
+
+    private void fileSelectionStart() {
+        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
+        intent.setType("*/*");
+        Intent i = Intent.createChooser(intent, "File");
+        startActivityForResult(i, REQUEST_SELECT_FILE);
+    }
+
+    private boolean requestMediaPermissions() {
+        boolean images = Permissions.READ_MEDIA_IMAGES.request(this);
+        boolean video = Permissions.READ_MEDIA_VIDEO.request(this);
+        boolean audio = Permissions.READ_MEDIA_AUDIO.request(this);
+        return areMediaPermissionsComplete() ?
+            (images || video || audio) :
+            false;
+    }
+
+    private boolean areMediaPermissionsComplete() {
+        return !(Permissions.READ_MEDIA_IMAGES.isPending() ||
+                 Permissions.READ_MEDIA_VIDEO.isPending() ||
+                 Permissions.READ_MEDIA_AUDIO.isPending());
     }
 
     private void editChannelProperties(Channel channel) {
@@ -1766,7 +1788,7 @@ private EditText newmsg;
             ttservice.setMute(false);
             ttservice.enableVoiceTransmission(false);
             ttservice.enableVoiceActivation(false);
-            if (Permissions.setupPermission(getBaseContext(), this, Permissions.MY_PERMISSIONS_REQUEST_READ_PHONE_STATE))
+            if (Permissions.READ_PHONE_STATE.request(this))
                 ttservice.enablePhoneCallReaction();
         }
 
@@ -1795,10 +1817,10 @@ private EditText newmsg;
         adjustSoundSystem(prefs);
 
         if (prefs.getBoolean(Preferences.PREF_SOUNDSYSTEM_BLUETOOTH_HEADSET, false)
-            && Permissions.setupPermission(getBaseContext(), this, Permissions.MY_PERMISSIONS_BLUETOOTH))
+            && Permissions.BLUETOOTH.request(this))
             ttservice.watchBluetoothHeadset();
 
-        if (Permissions.setupPermission(getBaseContext(), this, Permissions.MY_PERMISSIONS_REQUEST_WAKE_LOCK))
+        if (Permissions.WAKE_LOCK.request(this))
             wakeLock.acquire();
 
         int mastervol = prefs.getInt(Preferences.PREF_SOUNDSYSTEM_MASTERVOLUME, SoundLevel.SOUND_VOLUME_DEFAULT);
@@ -1837,27 +1859,28 @@ private EditText newmsg;
     public void onRequestPermissionsResult(int requestCode,
                                            @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        switch (requestCode) {
-            case Permissions.MY_PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE:
-                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-                intent.addCategory(Intent.CATEGORY_OPENABLE);
-                intent.setType("*/*");
-                Intent i = Intent.createChooser(intent, "File");
-                startActivityForResult(i, REQUEST_SELECT_FILE);
+        Permissions granted = Permissions.onRequestResult(this, requestCode, grantResults);
+        if (granted == null)
+            return;
+        switch (granted) {
+            case READ_EXTERNAL_STORAGE:
+            case READ_MEDIA_IMAGES:
+            case READ_MEDIA_VIDEO:
+            case READ_MEDIA_AUDIO:
+                if ((Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) || areMediaPermissionsComplete())
+                    fileSelectionStart();
                 break;
-            case Permissions.MY_PERMISSIONS_REQUEST_WAKE_LOCK:
+            case WAKE_LOCK:
                 wakeLock.acquire();
                 break;
-            case Permissions.MY_PERMISSIONS_REQUEST_READ_PHONE_STATE:
+            case READ_PHONE_STATE:
                 if ((mConnection != null) && mConnection.isBound())
                     ttservice.enablePhoneCallReaction();
                 break;
-            case Permissions.MY_PERMISSIONS_BLUETOOTH:
+            case BLUETOOTH:
                 if ((mConnection != null) && mConnection.isBound())
                     ttservice.watchBluetoothHeadset();
                 break;
-            case Permissions.MY_PERMISSIONS_REQUEST_VIBRATE:
-            case Permissions.MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE:
             default:
                 break;
         }
@@ -2183,7 +2206,7 @@ private EditText newmsg;
         if (!isSuspended) {
             SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
             boolean ptt_vibrate = pref.getBoolean("vibrate_checkbox", true) &&
-                Permissions.setupPermission(getBaseContext(), this, Permissions.MY_PERMISSIONS_REQUEST_VIBRATE);
+                Permissions.VIBRATE.request(this);
             if (voiceTransmissionEnabled) {
                 accessibilityAssistant.shutUp();
                 if (sounds.get(SOUND_VOICETXON) != 0) {
