@@ -16,8 +16,8 @@
     <string name="title_activity_text_message">رسالة نصية</string>
     <string name="title_activity_preferences">التفضيلات</string>
     <string name="title_activity_stream_media">بث ملف وسائط إلى القناة</string>
-    <string name="action_createchannel">انشاء</string>
-    <string name="action_updatechannel">تحديث</string>
+    <string name="action_createchannel">انشاء قناة</string>
+    <string name="action_updatechannel">تحديث القناة</string>
     <string name="text_con_failed">فشل الاتصال بالخادم. جاري إعادة المحاولة...</string>
     <string name="text_con_lost">انقطع الاتصال بالخادم</string>
     <string name="text_con_success">متصل بالخادم</string>
@@ -40,9 +40,9 @@
     <string name="pref_default_nickname">بدون اسم</string>
     <string name="pref_title_proximity_sensor">مستشعر القرب</string>
     <string name="pref_title_keep_screen_on">ابقاء الشاشة تعمل اثناء الاتصال</string>
-    <string name="pref_title_vibrate">الاهتزاز عند تفعيل الضغط والتحدث</string>
+    <string name="pref_title_vibrate">الاهتزاز عند تفعيل الضغط للتحدث</string>
     <string name="pref_show_log_messages">إظهار سجل الرسائل في سجل الدردشة</string>
-    <string name="pref_title_audio_icons">أحداث الصوت</string>
+    <string name="pref_title_audio_icons">اصوات الاحداث</string>
     <string name="pref_title_rx_tx_audio_icon">تبديل نقل الصوت</string>
     <string name="pref_summary_rx_tx_audio_icon">تشغيل الصوت عند الضغط على زر TX</string>
     <string name="pref_title_vox_triggered_icon">تشغيل صوت عند تفعيل التنشيط الصوتي</string>
@@ -158,7 +158,7 @@
     <string name="channel_prop_title_nointerrupt">بدون مقاطعة</string>
     <string name="channel_prop_title_classroom">Classroom</string>
     <string name="channel_prop_title_oprecvonly">المشرف يستقبل فقط</string>
-    <string name="channel_prop_title_novoiceact">تعطيل النشاط الصوتي</string>
+    <string name="channel_prop_title_novoiceact">تعطيل التنشيط الصوتي</string>
     <string name="channel_prop_title_noaudiorecord">تعطيل تسجيل الصوت</string>
 
 
