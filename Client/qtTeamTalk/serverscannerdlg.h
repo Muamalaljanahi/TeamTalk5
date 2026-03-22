@@ -18,13 +18,13 @@ class ServerScannerDlg : public QDialog
 
 public:
     enum ServerType {
-        ST_SAVED,
-        ST_PUBLIC
+        ST_SAVED  = 0x01,
+        ST_PUBLIC = 0x02
     };
 
     struct HostEntryEx {
         HostEntry entry;
-        ServerType type;
+        int typeFlags = 0; // Bitmask: ST_SAVED | ST_PUBLIC
         int usercount = 0;
         QString motd;
     };

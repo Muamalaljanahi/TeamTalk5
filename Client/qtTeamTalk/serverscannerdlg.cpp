@@ -21,7 +21,7 @@ ServerScannerDlg::ServerScannerDlg(QWidget *parent) :
     connect(ui->btnToggleAll, &QPushButton::clicked, this, &ServerScannerDlg::slotToggleAllClicked);
     connect(ui->serverListWidget, &QListWidget::itemChanged, this, &ServerScannerDlg::slotItemChanged);
 
-    // Load local servers
+    // Load local servers (Saved)
     for(int i=0;;++i)
     {
         HostEntry entry;
@@ -30,7 +30,7 @@ ServerScannerDlg::ServerScannerDlg(QWidget *parent) :
         
         HostEntryEx ex;
         ex.entry = entry;
-        ex.type = ST_SAVED;
+        ex.typeFlags = ST_SAVED;
         addServerToList(ex);
     }
 
@@ -44,10 +44,22 @@ ServerScannerDlg::~ServerScannerDlg()
 
 void ServerScannerDlg::addServerToList(const HostEntryEx& entryEx)
 {
-    for(const auto& item : m_servers)
+    // Deep merge: check if server exists by IP and Port
+    for(auto& item : m_servers)
     {
         if(item.entry.ipaddr == entryEx.entry.ipaddr && item.entry.tcpport == entryEx.entry.tcpport)
+        {
+            // Merge flags (e.g., now it is BOTH Saved and Public)
+            item.typeFlags |= entryEx.typeFlags;
+            
+            // Update stats if we got fresh ones from the web
+            if(entryEx.usercount > 0 || !entryEx.motd.isEmpty())
+            {
+                item.usercount = entryEx.usercount;
+                item.motd = entryEx.motd;
+            }
             return;
+        }
     }
     m_servers.append(entryEx);
 }
@@ -74,18 +86,12 @@ void ServerScannerDlg::updateServerList()
         const HostEntryEx& ex = m_servers[i];
 
         bool show = false;
-        if(ex.type == ST_SAVED && ui->chkSaved->isChecked()) show = true;
-        else if(ex.type == ST_PUBLIC && ui->chkPublic->isChecked()) show = true;
+        if((ex.typeFlags & ST_SAVED) && ui->chkSaved->isChecked()) show = true;
+        if((ex.typeFlags & ST_PUBLIC) && ui->chkPublic->isChecked()) show = true;
 
         if(show)
         {
-            QString text = ex.entry.name;
-            if(ex.usercount > 0)
-                text += QString(" (Users: %1)").arg(ex.usercount);
-            if(!ex.motd.isEmpty())
-                text += " - " + ex.motd;
-
-            QListWidgetItem* item = new QListWidgetItem(text, ui->serverListWidget);
+            QListWidgetItem* item = new QListWidgetItem(ui->serverListWidget);
             item->setFlags(item->flags() | Qt::ItemIsUserCheckable);
             
             QString key = ex.entry.ipaddr + ":" + QString::number(ex.entry.tcpport);
@@ -104,14 +110,19 @@ void ServerScannerDlg::updateItemAccessibility(QListWidgetItem* item)
 {
     if(!item) return;
     
-    QString originalText = item->data(Qt::UserRole + 1).toString();
-    if(originalText.isEmpty()) {
-        originalText = item->text();
-        item->setData(Qt::UserRole + 1, originalText);
-    }
+    int idx = item->data(Qt::UserRole).toInt();
+    if(idx < 0 || idx >= m_servers.size()) return;
+    const HostEntryEx& ex = m_servers[idx];
+
+    QString name = ex.entry.name;
+    QString state = (item->checkState() == Qt::Checked) ? tr("Selected") : tr("Not Selected");
+    QString users = tr("Users: %1").arg(ex.usercount);
     
-    QString state = (item->checkState() == Qt::Checked) ? tr("[Selected]") : tr("[Not Selected]");
-    item->setText(state + " " + originalText);
+    QString ttsText = QString("%1, %2, %3").arg(name).arg(state).arg(users);
+    if(!ex.motd.isEmpty())
+        ttsText += ", " + ex.motd;
+
+    item->setText(ttsText);
 }
 
 void ServerScannerDlg::updateToggleButton()
@@ -148,16 +159,21 @@ void ServerScannerDlg::slotItemChanged(QListWidgetItem* item)
 
 void ServerScannerDlg::slotFilterToggled(bool)
 {
+    // Mark all currently listed public servers for removal before refresh
+    // but keep their 'Saved' status if they have it.
     for(int i = m_servers.size() - 1; i >= 0; --i)
     {
-        if(m_servers[i].type == ST_PUBLIC)
+        if(m_servers[i].typeFlags == ST_PUBLIC)
             m_servers.removeAt(i);
+        else
+            m_servers[i].typeFlags &= ~ST_PUBLIC; // Strip public flag, keep Saved
     }
 
     if(ui->chkPublic->isChecked())
     {
-        QUrl url(URL_FREESERVER(true, true, true));
-        m_netMgr.get(QNetworkRequest(url));
+        QString urlStr = QString("http://www.bearware.dk/teamtalk/tt5servers.php?client=%1&version=%2&dllversion=%3&os=%4&official=1&unofficial=1")
+                         .arg(APPNAME_SHORT).arg(APPVERSION_SHORT).arg(TEAMTALK_VERSION).arg(OSTYPE);
+        m_netMgr.get(QNetworkRequest(QUrl(urlStr)));
     }
     
     updateServerList();
@@ -223,7 +239,7 @@ void ServerScannerDlg::slotNetworkReply(QNetworkReply* reply)
         HostEntryEx ex;
         if(getServerEntry(element, ex.entry))
         {
-            ex.type = ST_PUBLIC;
+            ex.typeFlags = ST_PUBLIC;
             
             QDomElement stats = element.firstChildElement("stats");
             if(!stats.isNull())
