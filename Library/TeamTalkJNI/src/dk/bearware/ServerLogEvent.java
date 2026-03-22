@@ -51,6 +51,8 @@ public interface ServerLogEvent {
     public static final int SERVERLOGEVENT_FILE_DELETED                = 0x00400000;
     public static final int SERVERLOGEVENT_SERVER_UPDATED              = 0x00800000;
     public static final int SERVERLOGEVENT_SERVER_SAVECONFIG           = 0x01000000;
+    public static final int SERVERLOGEVENT_USER_CRYPTERROR             = 0x02000000;
+    public static final int SERVERLOGEVENT_USER_NEW_STREAM             = 0x04000000;
 
     public static final int SERVERLOGEVENT_DEFAULT                     = SERVERLOGEVENT_USER_CONNECTED |
                                                                          SERVERLOGEVENT_USER_DISCONNECTED |
@@ -76,5 +78,7 @@ public interface ServerLogEvent {
                                                                          SERVERLOGEVENT_FILE_DOWNLOADED |
                                                                          SERVERLOGEVENT_FILE_DELETED |
                                                                          SERVERLOGEVENT_SERVER_UPDATED |
-                                                                         SERVERLOGEVENT_SERVER_SAVECONFIG;
+                                                                         SERVERLOGEVENT_SERVER_SAVECONFIG |
+                                                                         SERVERLOGEVENT_USER_CRYPTERROR |
+                                                                         SERVERLOGEVENT_USER_NEW_STREAM;
 }

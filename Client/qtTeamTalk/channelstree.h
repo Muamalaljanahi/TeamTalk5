@@ -56,6 +56,7 @@ public:
     void setUserMessaged(int userid, bool messaged);
     void setUserDesktopAccess(int userid, bool enable);
     void updateAllItems();
+    void archiveCurrentState(const QString& name);
 
 signals:
     void userDoubleClicked(int);

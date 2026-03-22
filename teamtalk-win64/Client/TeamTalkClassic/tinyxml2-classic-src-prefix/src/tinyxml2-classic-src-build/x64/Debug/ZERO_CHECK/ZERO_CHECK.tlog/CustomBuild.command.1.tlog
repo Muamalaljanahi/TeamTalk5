@@ -1,0 +1,10 @@
+^C:\TEAMTALK5\TEAMTALK-WIN64\CLIENT\TEAMTALKCLASSIC\TINYXML2-CLASSIC-SRC-PREFIX\SRC\TINYXML2-CLASSIC-SRC-BUILD\CMAKEFILES\7A418E28178E974CEEFB95FD6F06F0E9\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src -BC:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-build/tinyxml2.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\teamtalk5\teamtalk-win64\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\x64\Debug\QtTeamTalk5-Translations</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\teamtalk5\teamtalk-win64\Client\Tolk\x64\Debug\tolk-src</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\teamtalk5\Client\qtTeamTalk\TeamTalk5.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\x64\Debug\QtTeamTalk5-windeploy-release</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

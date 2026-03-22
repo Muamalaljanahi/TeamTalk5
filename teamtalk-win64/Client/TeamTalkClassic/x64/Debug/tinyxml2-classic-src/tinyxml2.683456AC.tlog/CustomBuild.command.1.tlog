@@ -1,0 +1,144 @@
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\0E14A085F632732D02679931A4DA3203\TINYXML2-CLASSIC-SRC-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/tmp/tinyxml2-classic-src-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Debug/tinyxml2-classic-src-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\0E14A085F632732D02679931A4DA3203\TINYXML2-CLASSIC-SRC-DOWNLOAD.RULE
+setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/tmp/tinyxml2-classic-src-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Debug/tinyxml2-classic-src-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\0E14A085F632732D02679931A4DA3203\TINYXML2-CLASSIC-SRC-UPDATE.RULE
+setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Debug/tinyxml2-classic-src-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\0E14A085F632732D02679931A4DA3203\TINYXML2-CLASSIC-SRC-PATCH.RULE
+setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+git reset --hard
+if %errorlevel% neq 0 goto :cmEnd
+git apply C:/teamtalk5/Client/TeamTalkClassic/0001-Build-MT-configurations-for-Visual-Studio.patch
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Debug/tinyxml2-classic-src-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\0E14A085F632732D02679931A4DA3203\TINYXML2-CLASSIC-SRC-CONFIGURE.RULE
+setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_DEBUG_POSTFIX=d -DBUILD_SHARED_LIBS=OFF -DBUILD_TESTING=OFF -Dtinyxml2_INSTALL_PKGCONFIG=OFF "-GVisual Studio 17 2022" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community" -S C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src -B C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Debug/tinyxml2-classic-src-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\0E14A085F632732D02679931A4DA3203\TINYXML2-CLASSIC-SRC-BUILD.RULE
+setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Debug/tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\0E14A085F632732D02679931A4DA3203\TINYXML2-CLASSIC-SRC-INSTALL.RULE
+setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Debug/tinyxml2-classic-src-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\F10CF24314F5C1AA816CA5B8CEED6D82\TINYXML2-CLASSIC-SRC-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/CMakeFiles/Debug/tinyxml2-classic-src-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Debug/tinyxml2-classic-src-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\0C2E29842F858E54E3BD5FEB5333851B\TINYXML2-CLASSIC-SRC.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\CLIENT\TEAMTALKCLASSIC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/teamtalk5 -BC:/teamtalk5/teamtalk-win64 --check-stamp-file C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

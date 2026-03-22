@@ -516,5 +516,13 @@ signals:
     /* End - CLIENTEVENT_* based events */
 
     void preferencesModified();
+
+private:
+    void startServerScan(const QList<HostEntry>& servers);
+    void processNextScan();
+    void finishScanStep();
+
+    QList<HostEntry> m_scanQueue;
+    bool m_isScanning = false;
 };
 #endif

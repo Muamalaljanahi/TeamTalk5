@@ -1,0 +1,10 @@
+^C:\TEAMTALK5\TEAMTALK-WIN64\CLIENT\TOLK\TOLK-SRC-PREFIX\SRC\TOLK-SRC-BUILD\CMAKEFILES\6D6E29969CEB88758C677AEA09858723\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src -BC:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-build/Tolk.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

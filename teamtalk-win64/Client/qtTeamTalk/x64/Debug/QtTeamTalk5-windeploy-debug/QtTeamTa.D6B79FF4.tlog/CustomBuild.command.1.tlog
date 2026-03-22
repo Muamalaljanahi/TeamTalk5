@@ -1,0 +1,22 @@
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\97E6F085CFE0A2E60B62FFFA67A6DEC0\QTTEAMTALK5-WINDEPLOY-DEBUG.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E remove_directory C:/teamtalk5/Client/qtTeamTalk/windeployqt-debug
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\6.9.2\msvc2022_64\bin\windeployqt.exe --no-quick-import --no-translations --no-system-d3d-compiler --verbose 2 --no-opengl-sw --debug --dir C:/teamtalk5/Client/qtTeamTalk/windeployqt-debug C:/teamtalk5/Client/qtTeamTalk/TeamTalk5.exe
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\CLIENT\QTTEAMTALK\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/teamtalk5 -BC:/teamtalk5/teamtalk-win64 --check-stamp-file C:/teamtalk5/teamtalk-win64/Client/qtTeamTalk/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

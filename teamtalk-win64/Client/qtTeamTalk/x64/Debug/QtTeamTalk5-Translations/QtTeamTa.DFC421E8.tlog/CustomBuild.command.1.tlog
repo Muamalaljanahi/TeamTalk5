@@ -1,0 +1,288 @@
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\BG.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/bg.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/bg.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\CS.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/cs.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/cs.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\DA.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/da.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/da.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\DE.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/de.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/de.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\EN.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/en.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/en.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\ES.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/es.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/es.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\FA.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/fa.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/fa.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\FR.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/fr.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/fr.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\HE.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/he.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/he.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\HR.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/hr.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/hr.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\HU.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/hu.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/hu.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\ID.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/id.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/id.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\IT.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/it.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/it.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\KO.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/ko.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/ko.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\NL.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/nl.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/nl.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\PL.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/pl.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/pl.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\PT_BR.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/pt_BR.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/pt_BR.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\PT_PT.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/pt_PT.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/pt_PT.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\RU.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/ru.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/ru.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\SK.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/sk.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/sk.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\SL.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/sl.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/sl.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\TH.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/th.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/th.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\TR.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/tr.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/tr.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\UK.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/uk.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/uk.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\VI.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/vi.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/vi.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\ZH_CN.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/zh_CN.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/zh_CN.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\C90DCFA0660B7425DFB824A05497EF32\ZH_TW.QM.RULE
+setlocal
+C:\Qt\6.9.2\msvc2022_64\bin\lrelease.exe C:/teamtalk5/Client/qtTeamTalk/languages/zh_TW.ts -qm C:/teamtalk5/Client/qtTeamTalk/languages/zh_TW.qm
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\97E6F085CFE0A2E60B62FFFA67A6DEC0\QTTEAMTALK5-TRANSLATIONS.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\CLIENT\QTTEAMTALK\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/teamtalk5 -BC:/teamtalk5/teamtalk-win64 --check-stamp-file C:/teamtalk5/teamtalk-win64/Client/qtTeamTalk/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,855 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C93454C7-8CF6-3EDE-B98F-1651E459BCC8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>tolk-src</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\9f5dd6c84dfce4f5605b654d81e6fbd2\tolk-src-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/tmp/tolk-src-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Debug/tolk-src-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Debug\tolk-src-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating directories for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Release -P C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/tmp/tolk-src-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Release/tolk-src-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Release\tolk-src-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating directories for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/MinSizeRel -P C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/tmp/tolk-src-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/MinSizeRel/tolk-src-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\MinSizeRel\tolk-src-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating directories for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/RelWithDebInfo -P C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/tmp/tolk-src-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/RelWithDebInfo/tolk-src-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\RelWithDebInfo\tolk-src-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\9f5dd6c84dfce4f5605b654d81e6fbd2\tolk-src-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (git clone) for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/tmp/tolk-src-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Debug/tolk-src-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\tolk-src-gitinfo.txt;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Debug\tolk-src-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Debug\tolk-src-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing download step (git clone) for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/tmp/tolk-src-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Release/tolk-src-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\tolk-src-gitinfo.txt;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Release\tolk-src-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Release\tolk-src-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing download step (git clone) for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/tmp/tolk-src-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/MinSizeRel/tolk-src-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\tolk-src-gitinfo.txt;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\MinSizeRel\tolk-src-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\MinSizeRel\tolk-src-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing download step (git clone) for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/tmp/tolk-src-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/RelWithDebInfo/tolk-src-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\tolk-src-gitinfo.txt;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\RelWithDebInfo\tolk-src-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\RelWithDebInfo\tolk-src-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\9f5dd6c84dfce4f5605b654d81e6fbd2\tolk-src-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No update step for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Debug/tolk-src-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Debug\tolk-src-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Debug\tolk-src-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No update step for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Release/tolk-src-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Release\tolk-src-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Release\tolk-src-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No update step for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/MinSizeRel/tolk-src-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\MinSizeRel\tolk-src-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\MinSizeRel\tolk-src-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No update step for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/RelWithDebInfo/tolk-src-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\RelWithDebInfo\tolk-src-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\RelWithDebInfo\tolk-src-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\9f5dd6c84dfce4f5605b654d81e6fbd2\tolk-src-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing patch step for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+git clean -fdx
+if %errorlevel% neq 0 goto :cmEnd
+git apply C:/teamtalk5/Client/Tolk/0001-Add-CMake-script-for-building-tolk.patch
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Debug/tolk-src-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Debug\tolk-src-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Debug\tolk-src-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing patch step for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+git clean -fdx
+if %errorlevel% neq 0 goto :cmEnd
+git apply C:/teamtalk5/Client/Tolk/0001-Add-CMake-script-for-building-tolk.patch
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Release/tolk-src-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Release\tolk-src-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Release\tolk-src-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing patch step for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+git clean -fdx
+if %errorlevel% neq 0 goto :cmEnd
+git apply C:/teamtalk5/Client/Tolk/0001-Add-CMake-script-for-building-tolk.patch
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/MinSizeRel/tolk-src-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\MinSizeRel\tolk-src-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\MinSizeRel\tolk-src-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing patch step for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+git clean -fdx
+if %errorlevel% neq 0 goto :cmEnd
+git apply C:/teamtalk5/Client/Tolk/0001-Add-CMake-script-for-building-tolk.patch
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/RelWithDebInfo/tolk-src-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\RelWithDebInfo\tolk-src-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\RelWithDebInfo\tolk-src-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\9f5dd6c84dfce4f5605b654d81e6fbd2\tolk-src-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing configure step for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=C:/teamtalk5/teamtalk-win64/Client/Tolk/Tolk -DTOLK_WITH_JAVAJNI=OFF -DTOLK_MULTITHREADED=ON "-GVisual Studio 17 2022" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community" -S C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src -B C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Debug/tolk-src-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\tmp\tolk-src-cfgcmd.txt;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Debug\tolk-src-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Debug\tolk-src-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing configure step for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=C:/teamtalk5/teamtalk-win64/Client/Tolk/Tolk -DTOLK_WITH_JAVAJNI=OFF -DTOLK_MULTITHREADED=ON "-GVisual Studio 17 2022" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community" -S C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src -B C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Release/tolk-src-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\tmp\tolk-src-cfgcmd.txt;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Release\tolk-src-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Release\tolk-src-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing configure step for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=C:/teamtalk5/teamtalk-win64/Client/Tolk/Tolk -DTOLK_WITH_JAVAJNI=OFF -DTOLK_MULTITHREADED=ON "-GVisual Studio 17 2022" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community" -S C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src -B C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/MinSizeRel/tolk-src-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\tmp\tolk-src-cfgcmd.txt;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\MinSizeRel\tolk-src-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\MinSizeRel\tolk-src-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing configure step for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=C:/teamtalk5/teamtalk-win64/Client/Tolk/Tolk -DTOLK_WITH_JAVAJNI=OFF -DTOLK_MULTITHREADED=ON "-GVisual Studio 17 2022" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community" -S C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src -B C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/RelWithDebInfo/tolk-src-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\tmp\tolk-src-cfgcmd.txt;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\RelWithDebInfo\tolk-src-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\RelWithDebInfo\tolk-src-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\9f5dd6c84dfce4f5605b654d81e6fbd2\tolk-src-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing build step for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Debug/tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Debug\tolk-src-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Debug\tolk-src-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing build step for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Release/tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Release\tolk-src-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Release\tolk-src-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing build step for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/MinSizeRel/tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\MinSizeRel\tolk-src-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\MinSizeRel\tolk-src-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing build step for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/RelWithDebInfo/tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\RelWithDebInfo\tolk-src-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\RelWithDebInfo\tolk-src-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\9f5dd6c84dfce4f5605b654d81e6fbd2\tolk-src-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing install step for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --target install --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Debug/tolk-src-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Debug\tolk-src-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Debug\tolk-src-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing install step for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --target install --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Release/tolk-src-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Release\tolk-src-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Release\tolk-src-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing install step for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --target install --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/MinSizeRel/tolk-src-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\MinSizeRel\tolk-src-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\MinSizeRel\tolk-src-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing install step for 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --target install --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/RelWithDebInfo/tolk-src-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\RelWithDebInfo\tolk-src-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\RelWithDebInfo\tolk-src-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\4600d7be8b2825d877d66fd4393e91e6\tolk-src-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/teamtalk5/teamtalk-win64/Client/Tolk/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/CMakeFiles/Debug/tolk-src-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Debug/tolk-src-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Debug\tolk-src-install;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Debug\tolk-src-mkdir;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Debug\tolk-src-download;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Debug\tolk-src-update;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Debug\tolk-src-patch;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Debug\tolk-src-configure;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Debug\tolk-src-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\CMakeFiles\Debug\tolk-src-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Completed 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/teamtalk5/teamtalk-win64/Client/Tolk/CMakeFiles/Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/CMakeFiles/Release/tolk-src-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Release/tolk-src-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Release\tolk-src-install;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Release\tolk-src-mkdir;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Release\tolk-src-download;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Release\tolk-src-update;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Release\tolk-src-patch;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Release\tolk-src-configure;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\Release\tolk-src-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\CMakeFiles\Release\tolk-src-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Completed 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/teamtalk5/teamtalk-win64/Client/Tolk/CMakeFiles/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/CMakeFiles/MinSizeRel/tolk-src-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/MinSizeRel/tolk-src-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\MinSizeRel\tolk-src-install;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\MinSizeRel\tolk-src-mkdir;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\MinSizeRel\tolk-src-download;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\MinSizeRel\tolk-src-update;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\MinSizeRel\tolk-src-patch;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\MinSizeRel\tolk-src-configure;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\MinSizeRel\tolk-src-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\CMakeFiles\MinSizeRel\tolk-src-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Completed 'tolk-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/teamtalk5/teamtalk-win64/Client/Tolk/CMakeFiles/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/CMakeFiles/RelWithDebInfo/tolk-src-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/RelWithDebInfo/tolk-src-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\RelWithDebInfo\tolk-src-install;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\RelWithDebInfo\tolk-src-mkdir;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\RelWithDebInfo\tolk-src-download;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\RelWithDebInfo\tolk-src-update;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\RelWithDebInfo\tolk-src-patch;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\RelWithDebInfo\tolk-src-configure;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-stamp\RelWithDebInfo\tolk-src-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\CMakeFiles\RelWithDebInfo\tolk-src-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\bf1668b7d07af619539aeaa5e08fd36e\tolk-src.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\CMakeFiles\Debug\tolk-src-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\CMakeFiles\tolk-src</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\CMakeFiles\Release\tolk-src-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\CMakeFiles\tolk-src</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\CMakeFiles\MinSizeRel\tolk-src-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\CMakeFiles\tolk-src</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\CMakeFiles\RelWithDebInfo\tolk-src-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\CMakeFiles\tolk-src</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\Client\Tolk\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/teamtalk5/Client/Tolk/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/teamtalk5 -BC:/teamtalk5/teamtalk-win64 --check-stamp-file C:/teamtalk5/teamtalk-win64/Client/Tolk/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\gitclone.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\tmp\tolk-src-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/teamtalk5/Client/Tolk/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/teamtalk5 -BC:/teamtalk5/teamtalk-win64 --check-stamp-file C:/teamtalk5/teamtalk-win64/Client/Tolk/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\gitclone.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\tmp\tolk-src-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/teamtalk5/Client/Tolk/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/teamtalk5 -BC:/teamtalk5/teamtalk-win64 --check-stamp-file C:/teamtalk5/teamtalk-win64/Client/Tolk/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\gitclone.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\tmp\tolk-src-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/teamtalk5/Client/Tolk/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/teamtalk5 -BC:/teamtalk5/teamtalk-win64 --check-stamp-file C:/teamtalk5/teamtalk-win64/Client/Tolk/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\gitclone.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\tmp\tolk-src-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\Tolk\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\CMakeFiles\tolk-src">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\teamtalk5\teamtalk-win64\ZERO_CHECK.vcxproj">
+      <Project>{04186163-EC4E-3D54-B2A1-C4323732A674}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

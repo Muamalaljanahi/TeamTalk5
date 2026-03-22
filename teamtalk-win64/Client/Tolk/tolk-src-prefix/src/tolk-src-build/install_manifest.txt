@@ -1,0 +1,5 @@
+C:/teamtalk5/teamtalk-win64/Client/Tolk/Tolk/lib/Tolk.lib
+C:/teamtalk5/teamtalk-win64/Client/Tolk/Tolk/lib/Tolk.dll
+C:/teamtalk5/teamtalk-win64/Client/Tolk/Tolk/include/Tolk.h
+C:/teamtalk5/teamtalk-win64/Client/Tolk/Tolk/lib/nvdaControllerClient64.dll
+C:/teamtalk5/teamtalk-win64/Client/Tolk/Tolk/lib/SAAPI64.dll

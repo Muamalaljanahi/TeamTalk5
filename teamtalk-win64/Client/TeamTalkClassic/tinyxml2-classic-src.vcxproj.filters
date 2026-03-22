@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\0e14a085f632732d02679931a4da3203\tinyxml2-classic-src-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\0e14a085f632732d02679931a4da3203\tinyxml2-classic-src-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\0e14a085f632732d02679931a4da3203\tinyxml2-classic-src-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\0e14a085f632732d02679931a4da3203\tinyxml2-classic-src-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\0e14a085f632732d02679931a4da3203\tinyxml2-classic-src-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\0e14a085f632732d02679931a4da3203\tinyxml2-classic-src-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\0e14a085f632732d02679931a4da3203\tinyxml2-classic-src-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\f10cf24314f5c1aa816ca5b8ceed6d82\tinyxml2-classic-src-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\0c2e29842f858e54e3bd5feb5333851b\tinyxml2-classic-src.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\teamtalk5\Client\TeamTalkClassic\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\CMakeFiles\tinyxml2-classic-src" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{05440AC7-7FAC-383C-AAAE-3BA267523E55}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

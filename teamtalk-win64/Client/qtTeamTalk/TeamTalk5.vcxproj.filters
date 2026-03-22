@@ -1,0 +1,909 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\preferencesdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\uservideowidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\channelstree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\channeldlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\userinfodlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\bannedusersdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\useraccountsdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\videogridwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\uservideodlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\serverpropertiesdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\keycompdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\serverlistdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\textmessagedlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\chattextedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\filesmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\filetransferdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\filesview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\uservolumedlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\changestatusdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\aboutdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\chatlineedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\serverstatsdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\onlineusersdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\onlineusersmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\mediastoragedlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\desktopgridwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\userdesktopwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\gridwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\userimagewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\userdesktopdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\desktopsharedlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\sendtextedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\streammediafiledlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\videotextdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\desktopaccessdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\generatettfiledlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\customvideofmtdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\bearwarelogindlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\audiopreprocessordlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\ttseventsmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\statusbardlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\statusbareventsmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\mycombobox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\utilsound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\utilvideo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\utiltts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\utilui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\utilhotkey.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\serverlogeventsmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\textmessagecontainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\useraccountsmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\encryptionsetupdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\utiltt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\utilxml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\utilos.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\serverdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\moveusersdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\useraccountdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\soundeventsmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\mytableview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\mytabwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\shortcutsmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\utilmedia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\chattextlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\chattemplatesdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\serverscannerdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\Client\qtTeamTalk\3rdparty\WinToast\wintoastlib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\EWIEGA46WW\qrc_resources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\preferencesdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\uservideowidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\channelstree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\channeldlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\userinfodlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\bannedusersdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\useraccountsdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\videogridwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\uservideodlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\serverpropertiesdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\keycompdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\serverlistdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\textmessagedlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\chattextedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\filesmodel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\filetransferdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\filesview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\uservolumedlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\changestatusdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\aboutdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\chatlineedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\serverstatsdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\onlineusersdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\onlineusersmodel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\mediastoragedlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\desktopgridwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\userdesktopwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\gridwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\userimagewidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\userdesktopdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\desktopsharedlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\sendtextedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\streammediafiledlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\videotextdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\desktopaccessdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\appinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\generatettfiledlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\customvideofmtdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\license.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\bearwarelogindlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\audiopreprocessordlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\ttseventsmodel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\statusbardlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\statusbareventsmodel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\mycombobox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\utilsound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\utilvideo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\utiltts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\utilui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\utilhotkey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\serverlogeventsmodel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\textmessagecontainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\useraccountsmodel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\encryptionsetupdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\utiltt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\utilxml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\utilos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\serverdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\moveusersdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\useraccountdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\soundeventsmodel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\mytableview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\mytabwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\shortcutsmodel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\utilmedia.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\chattextlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\chattemplatesdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\serverscannerdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\Client\qtTeamTalk\3rdparty\WinToast\wintoastlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_preferences.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_serverlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_userinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_bannedusers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_useraccounts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_serverproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_uservideo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_keycomp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_textmessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_filetransfer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_uservolume.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_changestatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_about.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_serverstats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_onlineusers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_mediastorage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_userdesktop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_desktopshare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_streammediafile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_videotext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_desktopaccess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_generatettfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_customvideofmt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_bearwarelogindlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_audiopreprocessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_statusbardlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_encryptionsetupdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_serverdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_useraccountdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_chattemplatesdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Debug\ui_serverscanner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_preferences.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_serverlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_userinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_bannedusers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_useraccounts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_serverproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_uservideo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_keycomp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_textmessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_filetransfer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_uservolume.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_changestatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_about.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_serverstats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_onlineusers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_mediastorage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_userdesktop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_desktopshare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_streammediafile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_videotext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_desktopaccess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_generatettfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_customvideofmt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_bearwarelogindlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_audiopreprocessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_statusbardlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_encryptionsetupdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_serverdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_useraccountdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_chattemplatesdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_Release\ui_serverscanner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_preferences.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_serverlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_userinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_bannedusers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_useraccounts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_serverproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_uservideo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_keycomp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_textmessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_filetransfer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_uservolume.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_changestatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_about.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_serverstats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_onlineusers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_mediastorage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_userdesktop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_desktopshare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_streammediafile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_videotext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_desktopaccess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_generatettfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_customvideofmt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_bearwarelogindlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_audiopreprocessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_statusbardlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_encryptionsetupdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_serverdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_useraccountdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_chattemplatesdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_MinSizeRel\ui_serverscanner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_preferences.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_serverlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_userinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_bannedusers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_useraccounts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_serverproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_uservideo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_keycomp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_textmessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_filetransfer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_uservolume.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_changestatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_about.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_serverstats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_onlineusers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_mediastorage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_userdesktop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_desktopshare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_streammediafile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_videotext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_desktopaccess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_generatettfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_customvideofmt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_bearwarelogindlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_audiopreprocessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_statusbardlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_encryptionsetupdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_serverdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_useraccountdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_chattemplatesdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\include_RelWithDebInfo\ui_serverscanner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\1b88f89be01c8cefc8725d32200cb280\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\99c6ecdfe84fe88960fd539c1985a41b\qrc_resources.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\teamtalk5\Client\qtTeamTalk\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\mainwindow.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\channel.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\preferences.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\serverlist.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\userinfo.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\bannedusers.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\useraccounts.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\serverproperties.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\uservideo.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\keycomp.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\textmessage.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\filetransfer.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\uservolume.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\changestatus.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\about.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\serverstats.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\onlineusers.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\mediastorage.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\userdesktop.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\desktopshare.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\streammediafile.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\videotext.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\desktopaccess.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\generatettfile.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\customvideofmt.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\bearwarelogindlg.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\audiopreprocessor.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\statusbardlg.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\encryptionsetupdlg.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\serverdlg.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\useraccountdlg.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\chattemplatesdlg.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\serverscanner.ui" />
+    <None Include="C:\teamtalk5\Client\qtTeamTalk\resources.qrc" />
+    <None Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\autouic_Debug.stamp" />
+    <None Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\autouic_Release.stamp" />
+    <None Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\TeamTalk5_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\teamtalk5\Client\qtTeamTalk\mainwindow.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{05440AC7-7FAC-383C-AAAE-3BA267523E55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9B4E2512-DE99-343A-96DF-CFBD24F8EC99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B8F319BB-8D3A-32F8-AA66-747E47FC3B92}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

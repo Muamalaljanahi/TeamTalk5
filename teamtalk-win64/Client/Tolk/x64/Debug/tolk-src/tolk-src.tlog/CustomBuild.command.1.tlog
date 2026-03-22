@@ -1,0 +1,142 @@
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\9F5DD6C84DFCE4F5605B654D81E6FBD2\TOLK-SRC-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/tmp/tolk-src-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Debug/tolk-src-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\9F5DD6C84DFCE4F5605B654D81E6FBD2\TOLK-SRC-DOWNLOAD.RULE
+setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/tmp/tolk-src-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Debug/tolk-src-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\9F5DD6C84DFCE4F5605B654D81E6FBD2\TOLK-SRC-UPDATE.RULE
+setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Debug/tolk-src-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\9F5DD6C84DFCE4F5605B654D81E6FBD2\TOLK-SRC-PATCH.RULE
+setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+git clean -fdx
+if %errorlevel% neq 0 goto :cmEnd
+git apply C:/teamtalk5/Client/Tolk/0001-Add-CMake-script-for-building-tolk.patch
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Debug/tolk-src-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\9F5DD6C84DFCE4F5605B654D81E6FBD2\TOLK-SRC-CONFIGURE.RULE
+setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_PREFIX=C:/teamtalk5/teamtalk-win64/Client/Tolk/Tolk -DTOLK_WITH_JAVAJNI=OFF -DTOLK_MULTITHREADED=ON "-GVisual Studio 17 2022" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community" -S C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src -B C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Debug/tolk-src-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\9F5DD6C84DFCE4F5605B654D81E6FBD2\TOLK-SRC-BUILD.RULE
+setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Debug/tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\9F5DD6C84DFCE4F5605B654D81E6FBD2\TOLK-SRC-INSTALL.RULE
+setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --target install --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Debug/tolk-src-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\4600D7BE8B2825D877D66FD4393E91E6\TOLK-SRC-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/teamtalk5/teamtalk-win64/Client/Tolk/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/CMakeFiles/Debug/tolk-src-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/Tolk/tolk-src-prefix/src/tolk-src-stamp/Debug/tolk-src-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\TEAMTALK-WIN64\CMAKEFILES\BF1668B7D07AF619539AEAA5E08FD36E\TOLK-SRC.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\TEAMTALK5\CLIENT\TOLK\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/teamtalk5 -BC:/teamtalk5/teamtalk-win64 --check-stamp-file C:/teamtalk5/teamtalk-win64/Client/Tolk/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

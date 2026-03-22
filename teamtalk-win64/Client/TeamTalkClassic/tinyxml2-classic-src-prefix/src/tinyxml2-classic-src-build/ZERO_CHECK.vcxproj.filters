@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-build\CMakeFiles\7a418e28178e974ceefb95fd6f06f0e9\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{FAECDFD2-931D-3BD5-8046-B237B8DDE802}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

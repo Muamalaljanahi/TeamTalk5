@@ -40,6 +40,8 @@
 #define USER_TYPE 0x20000
 #define MESSAGED_TYPE 0x40000
 
+#define ARCHIVE_MARKER (Qt::UserRole + 10)
+
 enum
 {
     COLUMN_ITEM,
@@ -272,7 +274,12 @@ void ChannelsTree::getTransmitUsers(int channelid,
 
 void ChannelsTree::resetChannels()
 {
-    delete topLevelItem(0);
+    for(int i=0; i<topLevelItemCount(); ++i) {
+        if(!topLevelItem(i)->data(COLUMN_ITEM, ARCHIVE_MARKER).toBool()) {
+            delete takeTopLevelItem(i);
+            break;
+        }
+    }
     m_channels.clear();
     m_users.clear();   
     m_videousers.clear();
@@ -572,9 +579,16 @@ void ChannelsTree::dragMoveEvent(QDragMoveEvent * event)
 
 QTreeWidgetItem* ChannelsTree::getChannelItem(int channelid) const
 {
-    QTreeWidgetItem* item = topLevelItem(0);
-    if(!item)
-        return nullptr;
+    QTreeWidgetItem* root = nullptr;
+    for(int i=0; i<topLevelItemCount(); ++i) {
+        if(!topLevelItem(i)->data(COLUMN_ITEM, ARCHIVE_MARKER).toBool()) {
+            root = topLevelItem(i);
+            break;
+        }
+    }
+    if(!root) return nullptr;
+
+    QTreeWidgetItem* item = root;
     QStack<QTreeWidgetItem*> channels;
     channels.push(item);
     while(channels.size())
@@ -966,9 +980,16 @@ void ChannelsTree::setUserTransmitUser(const User& user, const Channel& chan, QT
 
 QTreeWidgetItem* ChannelsTree::getUserItem(int userid) const
 {
-    QTreeWidgetItem* item = topLevelItem(0);
-    if(!item)
-        return nullptr;
+    QTreeWidgetItem* root = nullptr;
+    for(int i=0; i<topLevelItemCount(); ++i) {
+        if(!topLevelItem(i)->data(COLUMN_ITEM, ARCHIVE_MARKER).toBool()) {
+            root = topLevelItem(i);
+            break;
+        }
+    }
+    if(!root) return nullptr;
+
+    QTreeWidgetItem* item = root;
     QStack<QTreeWidgetItem*> channels;
     channels.push(item);
     while(channels.size())
@@ -1697,4 +1718,21 @@ QString ChannelsTree::getItemText() const
     if (item)
         return item->data(COLUMN_ITEM, Qt::DisplayRole).toString();
     return QString();
+}
+
+void ChannelsTree::archiveCurrentState(const QString& name)
+{
+    QTreeWidgetItem* root = nullptr;
+    for(int i=0; i<topLevelItemCount(); ++i) {
+        if(!topLevelItem(i)->data(COLUMN_ITEM, ARCHIVE_MARKER).toBool()) {
+            root = topLevelItem(i);
+            break;
+        }
+    }
+    if(!root) return;
+
+    QTreeWidgetItem* archive = root->clone();
+    archive->setData(COLUMN_ITEM, Qt::DisplayRole, name);
+    archive->setData(COLUMN_ITEM, ARCHIVE_MARKER, true);
+    addTopLevelItem(archive);
 }

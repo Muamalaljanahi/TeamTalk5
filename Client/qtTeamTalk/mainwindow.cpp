@@ -18,6 +18,7 @@
 #include "mainwindow.h"
 #include "serverlistdlg.h"
 #include "serverpropertiesdlg.h"
+#include "serverscannerdlg.h"
 #include "preferencesdlg.h"
 #include "settings.h"
 #include "channeldlg.h"
@@ -135,6 +136,7 @@ MainWindow::MainWindow(const QString& cfgfile)
 , m_display(nullptr)
 , m_nWindowShareWnd(0)
 #endif
+, m_isScanning(false)
 {
     //Ensure the correct version of the DLL is loaded
     if(QString(TEAMTALK_VERSION) != _Q(TT_GetVersion()))
@@ -1056,6 +1058,14 @@ void MainWindow::clienteventConFailed()
     disconnectFromServer();
 
     killLocalTimer(TIMER_RECONNECT);
+
+    if(m_isScanning)
+    {
+        addStatusMsg(STATUSBAR_BYPASS, tr("Failed to connect to %1. Skipping...").arg(m_host.name));
+        QTimer::singleShot(1000, this, &MainWindow::processNextScan);
+        return;
+    }
+
     if (ttSettings->value(SETTINGS_CONNECTION_RECONNECT, SETTINGS_CONNECTION_RECONNECT_DEFAULT).toBool())
     {
         m_timers[startTimer(5000)] = TIMER_RECONNECT;
@@ -1914,6 +1924,14 @@ void MainWindow::processTTMessage(const TTMessage& msg)
 void MainWindow::cmdCompleteLoggedIn(int myuserid)
 {
     Q_UNUSED(myuserid);
+
+    if(m_isScanning)
+    {
+        addStatusMsg(STATUSBAR_BYPASS, tr("Scanning %1...").arg(m_host.name));
+        // Give some time for channels/users to populate before archiving
+        QTimer::singleShot(2000, this, &MainWindow::finishScanStep);
+        return;
+    }
 
     //login command completed
 
@@ -7988,6 +8006,16 @@ void MainWindow::slotTextChanged()
 
 void MainWindow::keyPressEvent(QKeyEvent* e)
 {
+    if (e->key() == Qt::Key_F3)
+    {
+        ServerScannerDlg dlg(this);
+        if (dlg.exec() == QDialog::Accepted)
+        {
+            startServerScan(dlg.getSelectedServers());
+        }
+        return;
+    }
+
     if (e->key() == Qt::Key_Enter || e->key() == Qt::Key_Return)
     {
 #if defined(Q_OS_DARWIN)
@@ -8071,4 +8099,41 @@ void MainWindow::speakClientStats()
     if (ping >= 0)
         strstats += QString(", PING: %3").arg(ping);
     addTextToSpeechMessage(strstats);
+}
+
+void MainWindow::startServerScan(const QList<HostEntry>& servers)
+{
+    if(servers.isEmpty()) return;
+    
+    m_isScanning = true;
+    m_scanQueue = servers;
+    
+    if(TT_GetFlags(ttInst) & CLIENT_CONNECTED)
+        disconnectFromServer();
+        
+    QTimer::singleShot(500, this, &MainWindow::processNextScan);
+}
+
+void MainWindow::processNextScan()
+{
+    if(!m_isScanning || m_scanQueue.isEmpty())
+    {
+        m_isScanning = false;
+        return;
+    }
+    
+    m_host = m_scanQueue.takeFirst();
+    connectToServer();
+}
+
+void MainWindow::finishScanStep()
+{
+    if(!m_isScanning) return;
+    
+    // Archive current server's tree
+    ui.channelsWidget->archiveCurrentState(m_host.name + " (" + m_host.ipaddr + ")");
+    
+    // Disconnect and move to next after a short delay
+    disconnectFromServer();
+    QTimer::singleShot(1000, this, &MainWindow::processNextScan);
 }

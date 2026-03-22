@@ -1,0 +1,867 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{683456AC-77F0-377C-9DC0-2C728DE8C15E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>tinyxml2-classic-src</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\0e14a085f632732d02679931a4da3203\tinyxml2-classic-src-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/tmp/tinyxml2-classic-src-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Debug/tinyxml2-classic-src-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Debug\tinyxml2-classic-src-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating directories for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Release -P C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/tmp/tinyxml2-classic-src-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Release/tinyxml2-classic-src-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Release\tinyxml2-classic-src-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating directories for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/MinSizeRel -P C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/tmp/tinyxml2-classic-src-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/MinSizeRel/tinyxml2-classic-src-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\MinSizeRel\tinyxml2-classic-src-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating directories for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/RelWithDebInfo -P C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/tmp/tinyxml2-classic-src-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/RelWithDebInfo/tinyxml2-classic-src-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\RelWithDebInfo\tinyxml2-classic-src-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\0e14a085f632732d02679931a4da3203\tinyxml2-classic-src-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (git clone) for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/tmp/tinyxml2-classic-src-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Debug/tinyxml2-classic-src-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\tinyxml2-classic-src-gitinfo.txt;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Debug\tinyxml2-classic-src-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Debug\tinyxml2-classic-src-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing download step (git clone) for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/tmp/tinyxml2-classic-src-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Release/tinyxml2-classic-src-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\tinyxml2-classic-src-gitinfo.txt;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Release\tinyxml2-classic-src-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Release\tinyxml2-classic-src-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing download step (git clone) for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/tmp/tinyxml2-classic-src-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/MinSizeRel/tinyxml2-classic-src-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\tinyxml2-classic-src-gitinfo.txt;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\MinSizeRel\tinyxml2-classic-src-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\MinSizeRel\tinyxml2-classic-src-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing download step (git clone) for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/tmp/tinyxml2-classic-src-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/RelWithDebInfo/tinyxml2-classic-src-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\tinyxml2-classic-src-gitinfo.txt;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\RelWithDebInfo\tinyxml2-classic-src-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\RelWithDebInfo\tinyxml2-classic-src-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\0e14a085f632732d02679931a4da3203\tinyxml2-classic-src-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No update step for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Debug/tinyxml2-classic-src-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Debug\tinyxml2-classic-src-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Debug\tinyxml2-classic-src-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No update step for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Release/tinyxml2-classic-src-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Release\tinyxml2-classic-src-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Release\tinyxml2-classic-src-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No update step for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/MinSizeRel/tinyxml2-classic-src-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\MinSizeRel\tinyxml2-classic-src-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\MinSizeRel\tinyxml2-classic-src-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No update step for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/RelWithDebInfo/tinyxml2-classic-src-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\RelWithDebInfo\tinyxml2-classic-src-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\RelWithDebInfo\tinyxml2-classic-src-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\0e14a085f632732d02679931a4da3203\tinyxml2-classic-src-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing patch step for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+git reset --hard
+if %errorlevel% neq 0 goto :cmEnd
+git apply C:/teamtalk5/Client/TeamTalkClassic/0001-Build-MT-configurations-for-Visual-Studio.patch
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Debug/tinyxml2-classic-src-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Debug\tinyxml2-classic-src-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Debug\tinyxml2-classic-src-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing patch step for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+git reset --hard
+if %errorlevel% neq 0 goto :cmEnd
+git apply C:/teamtalk5/Client/TeamTalkClassic/0001-Build-MT-configurations-for-Visual-Studio.patch
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Release/tinyxml2-classic-src-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Release\tinyxml2-classic-src-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Release\tinyxml2-classic-src-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing patch step for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+git reset --hard
+if %errorlevel% neq 0 goto :cmEnd
+git apply C:/teamtalk5/Client/TeamTalkClassic/0001-Build-MT-configurations-for-Visual-Studio.patch
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/MinSizeRel/tinyxml2-classic-src-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\MinSizeRel\tinyxml2-classic-src-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\MinSizeRel\tinyxml2-classic-src-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing patch step for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+git reset --hard
+if %errorlevel% neq 0 goto :cmEnd
+git apply C:/teamtalk5/Client/TeamTalkClassic/0001-Build-MT-configurations-for-Visual-Studio.patch
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/RelWithDebInfo/tinyxml2-classic-src-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\RelWithDebInfo\tinyxml2-classic-src-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\RelWithDebInfo\tinyxml2-classic-src-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\0e14a085f632732d02679931a4da3203\tinyxml2-classic-src-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing configure step for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_DEBUG_POSTFIX=d -DBUILD_SHARED_LIBS=OFF -DBUILD_TESTING=OFF -Dtinyxml2_INSTALL_PKGCONFIG=OFF "-GVisual Studio 17 2022" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community" -S C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src -B C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Debug/tinyxml2-classic-src-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\tmp\tinyxml2-classic-src-cfgcmd.txt;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Debug\tinyxml2-classic-src-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Debug\tinyxml2-classic-src-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing configure step for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_DEBUG_POSTFIX=d -DBUILD_SHARED_LIBS=OFF -DBUILD_TESTING=OFF -Dtinyxml2_INSTALL_PKGCONFIG=OFF "-GVisual Studio 17 2022" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community" -S C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src -B C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Release/tinyxml2-classic-src-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\tmp\tinyxml2-classic-src-cfgcmd.txt;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Release\tinyxml2-classic-src-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Release\tinyxml2-classic-src-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing configure step for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_DEBUG_POSTFIX=d -DBUILD_SHARED_LIBS=OFF -DBUILD_TESTING=OFF -Dtinyxml2_INSTALL_PKGCONFIG=OFF "-GVisual Studio 17 2022" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community" -S C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src -B C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/MinSizeRel/tinyxml2-classic-src-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\tmp\tinyxml2-classic-src-cfgcmd.txt;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\MinSizeRel\tinyxml2-classic-src-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\MinSizeRel\tinyxml2-classic-src-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing configure step for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_DEBUG_POSTFIX=d -DBUILD_SHARED_LIBS=OFF -DBUILD_TESTING=OFF -Dtinyxml2_INSTALL_PKGCONFIG=OFF "-GVisual Studio 17 2022" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community" -S C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src -B C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/RelWithDebInfo/tinyxml2-classic-src-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\tmp\tinyxml2-classic-src-cfgcmd.txt;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\RelWithDebInfo\tinyxml2-classic-src-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\RelWithDebInfo\tinyxml2-classic-src-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\0e14a085f632732d02679931a4da3203\tinyxml2-classic-src-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing build step for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Debug/tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Debug\tinyxml2-classic-src-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Debug\tinyxml2-classic-src-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing build step for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Release/tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Release\tinyxml2-classic-src-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Release\tinyxml2-classic-src-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing build step for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/MinSizeRel/tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\MinSizeRel\tinyxml2-classic-src-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\MinSizeRel\tinyxml2-classic-src-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing build step for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/RelWithDebInfo/tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\RelWithDebInfo\tinyxml2-classic-src-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\RelWithDebInfo\tinyxml2-classic-src-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\0e14a085f632732d02679931a4da3203\tinyxml2-classic-src-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No install step for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Debug/tinyxml2-classic-src-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Debug\tinyxml2-classic-src-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Debug\tinyxml2-classic-src-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No install step for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Release/tinyxml2-classic-src-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Release\tinyxml2-classic-src-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Release\tinyxml2-classic-src-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No install step for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/MinSizeRel/tinyxml2-classic-src-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\MinSizeRel\tinyxml2-classic-src-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\MinSizeRel\tinyxml2-classic-src-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No install step for 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/RelWithDebInfo/tinyxml2-classic-src-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\RelWithDebInfo\tinyxml2-classic-src-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\RelWithDebInfo\tinyxml2-classic-src-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\f10cf24314f5c1aa816ca5b8ceed6d82\tinyxml2-classic-src-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/CMakeFiles/Debug/tinyxml2-classic-src-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Debug/tinyxml2-classic-src-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Debug\tinyxml2-classic-src-install;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Debug\tinyxml2-classic-src-mkdir;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Debug\tinyxml2-classic-src-download;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Debug\tinyxml2-classic-src-update;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Debug\tinyxml2-classic-src-patch;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Debug\tinyxml2-classic-src-configure;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Debug\tinyxml2-classic-src-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\CMakeFiles\Debug\tinyxml2-classic-src-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Completed 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/CMakeFiles/Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/CMakeFiles/Release/tinyxml2-classic-src-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/Release/tinyxml2-classic-src-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Release\tinyxml2-classic-src-install;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Release\tinyxml2-classic-src-mkdir;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Release\tinyxml2-classic-src-download;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Release\tinyxml2-classic-src-update;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Release\tinyxml2-classic-src-patch;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Release\tinyxml2-classic-src-configure;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\Release\tinyxml2-classic-src-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\CMakeFiles\Release\tinyxml2-classic-src-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Completed 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/CMakeFiles/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/CMakeFiles/MinSizeRel/tinyxml2-classic-src-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/MinSizeRel/tinyxml2-classic-src-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\MinSizeRel\tinyxml2-classic-src-install;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\MinSizeRel\tinyxml2-classic-src-mkdir;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\MinSizeRel\tinyxml2-classic-src-download;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\MinSizeRel\tinyxml2-classic-src-update;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\MinSizeRel\tinyxml2-classic-src-patch;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\MinSizeRel\tinyxml2-classic-src-configure;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\MinSizeRel\tinyxml2-classic-src-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\CMakeFiles\MinSizeRel\tinyxml2-classic-src-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Completed 'tinyxml2-classic-src'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/CMakeFiles/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/CMakeFiles/RelWithDebInfo/tinyxml2-classic-src-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/tinyxml2-classic-src-prefix/src/tinyxml2-classic-src-stamp/RelWithDebInfo/tinyxml2-classic-src-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\RelWithDebInfo\tinyxml2-classic-src-install;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\RelWithDebInfo\tinyxml2-classic-src-mkdir;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\RelWithDebInfo\tinyxml2-classic-src-download;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\RelWithDebInfo\tinyxml2-classic-src-update;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\RelWithDebInfo\tinyxml2-classic-src-patch;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\RelWithDebInfo\tinyxml2-classic-src-configure;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\src\tinyxml2-classic-src-stamp\RelWithDebInfo\tinyxml2-classic-src-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\CMakeFiles\RelWithDebInfo\tinyxml2-classic-src-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\0c2e29842f858e54e3bd5feb5333851b\tinyxml2-classic-src.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\CMakeFiles\Debug\tinyxml2-classic-src-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\CMakeFiles\tinyxml2-classic-src</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\CMakeFiles\Release\tinyxml2-classic-src-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\CMakeFiles\tinyxml2-classic-src</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\CMakeFiles\MinSizeRel\tinyxml2-classic-src-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\CMakeFiles\tinyxml2-classic-src</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\CMakeFiles\RelWithDebInfo\tinyxml2-classic-src-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\CMakeFiles\tinyxml2-classic-src</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\Client\TeamTalkClassic\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/teamtalk5/Client/TeamTalkClassic/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/teamtalk5 -BC:/teamtalk5/teamtalk-win64 --check-stamp-file C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\gitclone.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\teamtalk5\Client\TeamTalkClassic\ttclassic.cmake;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\tmp\tinyxml2-classic-src-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/teamtalk5/Client/TeamTalkClassic/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/teamtalk5 -BC:/teamtalk5/teamtalk-win64 --check-stamp-file C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\gitclone.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\teamtalk5\Client\TeamTalkClassic\ttclassic.cmake;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\tmp\tinyxml2-classic-src-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/teamtalk5/Client/TeamTalkClassic/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/teamtalk5 -BC:/teamtalk5/teamtalk-win64 --check-stamp-file C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\gitclone.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\teamtalk5\Client\TeamTalkClassic\ttclassic.cmake;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\tmp\tinyxml2-classic-src-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/teamtalk5/Client/TeamTalkClassic/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/teamtalk5 -BC:/teamtalk5/teamtalk-win64 --check-stamp-file C:/teamtalk5/teamtalk-win64/Client/TeamTalkClassic/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\gitclone.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\teamtalk5\Client\TeamTalkClassic\ttclassic.cmake;C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\tinyxml2-classic-src-prefix\tmp\tinyxml2-classic-src-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\teamtalk5\teamtalk-win64\Client\TeamTalkClassic\CMakeFiles\tinyxml2-classic-src">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\teamtalk5\teamtalk-win64\ZERO_CHECK.vcxproj">
+      <Project>{04186163-EC4E-3D54-B2A1-C4323732A674}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

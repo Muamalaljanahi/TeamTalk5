@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\Tolk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\TolkJNI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\ScreenReaderDriverJAWS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\ScreenReaderDriverNVDA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\ScreenReaderDriverSA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\ScreenReaderDriverSNova.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\ScreenReaderDriverWE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\ScreenReaderDriverZT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\ScreenReaderDriverSAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\fsapi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\wineyes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\zt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\Tolk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\TolkVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\ScreenReaderDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\ScreenReaderDriverJAWS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\ScreenReaderDriverNVDA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\ScreenReaderDriverSA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\ScreenReaderDriverSNova.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\ScreenReaderDriverWE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\ScreenReaderDriverZT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\ScreenReaderDriverSAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\fsapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\wineyes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\zt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\teamtalk5\teamtalk-win64\Client\Tolk\tolk-src-prefix\src\tolk-src\src\Tolk.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{56B989DE-72DE-3D1C-828F-7B7D6DF05ADB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{08DDDB0D-15AB-3457-B48E-D1C54F1EF0A2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

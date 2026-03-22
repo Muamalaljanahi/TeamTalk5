@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\teamtalk5\teamtalk-win64\CMakeFiles\97e6f085cfe0a2e60b62fffa67a6dec0\QtTeamTalk5-openssl-deploy-debug.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\teamtalk5\Client\qtTeamTalk\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\teamtalk5\teamtalk-win64\Client\qtTeamTalk\CMakeFiles\QtTeamTalk5-openssl-deploy-debug" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{05440AC7-7FAC-383C-AAAE-3BA267523E55}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
