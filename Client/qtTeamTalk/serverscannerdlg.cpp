@@ -1,3 +1,18 @@
+/*
+ * Copyright (c) 2005-2025, BearWare.dk
+ * 
+ * Contact Information:
+ *
+ * Bjoern D. Rasmussen
+ * Skanderborgvej 122 2.tv
+ * DK-8260 Viby J
+ * Denmark
+ * Email: contact@bearware.dk
+ * Web: http://www.bearware.dk
+ *
+ * This source code is part of the TeamTalk 5 SDK.
+ */
+
 #include "serverscannerdlg.h"
 #include "ui_serverscanner.h"
 #include <QDomDocument>
@@ -15,13 +30,18 @@ ServerScannerDlg::ServerScannerDlg(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    connect(&m_netMgr, &QNetworkAccessManager::finished, this, &ServerScannerDlg::slotNetworkReply);
-    connect(ui->chkSaved, &QCheckBox::toggled, this, &ServerScannerDlg::slotFilterToggled);
-    connect(ui->chkPublic, &QCheckBox::toggled, this, &ServerScannerDlg::slotFilterToggled);
-    connect(ui->btnToggleAll, &QPushButton::clicked, this, &ServerScannerDlg::slotToggleAllClicked);
-    connect(ui->serverListWidget, &QListWidget::itemChanged, this, &ServerScannerDlg::slotItemChanged);
+    connect(&m_netMgr, &QNetworkAccessManager::finished, 
+            this, &ServerScannerDlg::slotNetworkReply);
+    connect(ui->chkSaved, &QCheckBox::toggled, 
+            this, &ServerScannerDlg::slotFilterToggled);
+    connect(ui->chkPublic, &QCheckBox::toggled, 
+            this, &ServerScannerDlg::slotFilterToggled);
+    connect(ui->btnToggleAll, &QPushButton::clicked, 
+            this, &ServerScannerDlg::slotToggleAllClicked);
+    connect(ui->serverListWidget, &QListWidget::itemChanged, 
+            this, &ServerScannerDlg::slotItemChanged);
 
-    // Load local servers (Saved)
+    // Load locally saved servers
     for(int i=0;;++i)
     {
         HostEntry entry;
@@ -44,15 +64,15 @@ ServerScannerDlg::~ServerScannerDlg()
 
 void ServerScannerDlg::addServerToList(const HostEntryEx& entryEx)
 {
-    // Deep merge: check if server exists by IP and Port
+    // Check for existing server to merge stats and flags
     for(auto& item : m_servers)
     {
-        if(item.entry.ipaddr == entryEx.entry.ipaddr && item.entry.tcpport == entryEx.entry.tcpport)
+        if(item.entry.ipaddr == entryEx.entry.ipaddr && 
+           item.entry.tcpport == entryEx.entry.tcpport)
         {
-            // Merge flags (e.g., now it is BOTH Saved and Public)
             item.typeFlags |= entryEx.typeFlags;
             
-            // Update stats if we got fresh ones from the web
+            // Update stats if available from public list
             if(entryEx.usercount > 0 || !entryEx.motd.isEmpty())
             {
                 item.usercount = entryEx.usercount;
@@ -68,6 +88,7 @@ void ServerScannerDlg::updateServerList()
 {
     ui->serverListWidget->blockSignals(true);
     
+    // Preserve current check states
     QMap<QString, Qt::CheckState> checkStates;
     for(int i = 0; i < ui->serverListWidget->count(); ++i)
     {
@@ -118,6 +139,7 @@ void ServerScannerDlg::updateItemAccessibility(QListWidgetItem* item)
     QString state = (item->checkState() == Qt::Checked) ? tr("Selected") : tr("Not Selected");
     QString users = tr("Users: %1").arg(ex.usercount);
     
+    // Accessibility format: Name, Status, Users, MOTD
     QString ttsText = QString("%1, %2, %3").arg(name).arg(state).arg(users);
     if(!ex.motd.isEmpty())
         ttsText += ", " + ex.motd;
@@ -145,10 +167,7 @@ void ServerScannerDlg::updateToggleButton()
         }
     }
 
-    if(anyUnchecked)
-        ui->btnToggleAll->setText(tr("Select All"));
-    else
-        ui->btnToggleAll->setText(tr("Unselect All"));
+    ui->btnToggleAll->setText(anyUnchecked ? tr("Select All") : tr("Unselect All"));
 }
 
 void ServerScannerDlg::slotItemChanged(QListWidgetItem* item)
@@ -159,18 +178,18 @@ void ServerScannerDlg::slotItemChanged(QListWidgetItem* item)
 
 void ServerScannerDlg::slotFilterToggled(bool)
 {
-    // Mark all currently listed public servers for removal before refresh
-    // but keep their 'Saved' status if they have it.
+    // Clear public status from all servers before refreshing
     for(int i = m_servers.size() - 1; i >= 0; --i)
     {
         if(m_servers[i].typeFlags == ST_PUBLIC)
             m_servers.removeAt(i);
         else
-            m_servers[i].typeFlags &= ~ST_PUBLIC; // Strip public flag, keep Saved
+            m_servers[i].typeFlags &= ~ST_PUBLIC;
     }
 
     if(ui->chkPublic->isChecked())
     {
+        // Fetch all servers (official + unofficial) from BearWare
         QString urlStr = QString("http://www.bearware.dk/teamtalk/tt5servers.php?client=%1&version=%2&dllversion=%3&os=%4&official=1&unofficial=1")
                          .arg(APPNAME_SHORT).arg(APPVERSION_SHORT).arg(TEAMTALK_VERSION).arg(OSTYPE);
         m_netMgr.get(QNetworkRequest(QUrl(urlStr)));

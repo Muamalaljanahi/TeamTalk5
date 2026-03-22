@@ -6,7 +6,6 @@
 #include <QNetworkReply>
 #include <QListWidgetItem>
 #include "common.h"
-#include "utiltt.h"
 
 namespace Ui {
 class ServerScannerDlg;
@@ -17,18 +16,6 @@ class ServerScannerDlg : public QDialog
     Q_OBJECT
 
 public:
-    enum ServerType {
-        ST_SAVED  = 0x01,
-        ST_PUBLIC = 0x02
-    };
-
-    struct HostEntryEx {
-        HostEntry entry;
-        int typeFlags = 0; // Bitmask: ST_SAVED | ST_PUBLIC
-        int usercount = 0;
-        QString motd;
-    };
-
     explicit ServerScannerDlg(QWidget *parent = nullptr);
     ~ServerScannerDlg();
 
@@ -41,14 +28,28 @@ private slots:
     void slotItemChanged(QListWidgetItem* item);
 
 private:
-    Ui::ServerScannerDlg *ui;
-    QNetworkAccessManager m_netMgr;
-    QList<HostEntryEx> m_servers;
+    // Internal types for server state management
+    enum ServerType {
+        ST_SAVED  = 0x01,
+        ST_PUBLIC = 0x02
+    };
 
+    struct HostEntryEx {
+        HostEntry entry;
+        int typeFlags = 0; // Bitmask: ST_SAVED | ST_PUBLIC
+        int usercount = 0;
+        QString motd;
+    };
+
+    // Helper methods
     void addServerToList(const HostEntryEx& entryEx);
     void updateServerList();
     void updateItemAccessibility(QListWidgetItem* item);
     void updateToggleButton();
+
+    Ui::ServerScannerDlg *ui;
+    QNetworkAccessManager m_netMgr;
+    QList<HostEntryEx> m_servers;
 };
 
 #endif // SERVERSCANNERDLG_H
