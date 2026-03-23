@@ -1014,6 +1014,7 @@ void MainWindow::clienteventConSuccess()
 {
     //disable reconnect timer
     killLocalTimer(TIMER_RECONNECT);
+    killLocalTimer(TIMER_CON_TIMEOUT);
 
     //switch to connected icon in tray
     if(m_sysicon)
@@ -1079,11 +1080,25 @@ void MainWindow::clienteventConCryptError(const TTMessage& msg)
 {
     addStatusMsg(STATUSBAR_BYPASS, tr("Secure connection failed due to error 0x%1: %2.").arg(msg.nSource, 0, 16).arg(_Q(msg.clienterrormsg.szErrorMsg)));
     addTextToSpeechMessage(TTS_SERVER_CONNECTIVITY, tr("Secure connection failed due to error 0x%1: %2.").arg(msg.nSource, 0, 16).arg(_Q(msg.clienterrormsg.szErrorMsg)));
+
+    if (m_isScanning)
+    {
+        disconnectFromServer();
+        QTimer::singleShot(1000, this, &MainWindow::processNextScan);
+    }
 }
 
 void MainWindow::clienteventConLost()
 {
     disconnectFromServer();
+
+    if (m_isScanning)
+    {
+        addStatusMsg(STATUSBAR_BYPASS, tr("Connection lost to %1. Skipping...").arg(m_host.name));
+        QTimer::singleShot(1000, this, &MainWindow::processNextScan);
+        return;
+    }
+
     if(ttSettings->value(SETTINGS_CONNECTION_RECONNECT, SETTINGS_CONNECTION_RECONNECT_DEFAULT).toBool())
         m_timers[startTimer(5000)] = TIMER_RECONNECT;
 
@@ -1100,6 +1115,14 @@ void MainWindow::clienteventMyselfKicked(const TTMessage& msg)
     Q_ASSERT(msg.ttType == __USER || msg.ttType == __NONE);
     if (msg.nSource == 0)
     {
+        if (m_isScanning)
+        {
+            addStatusMsg(STATUSBAR_BYPASS, tr("Kicked from server %1. Skipping...").arg(m_host.name));
+            disconnectFromServer();
+            QTimer::singleShot(1000, this, &MainWindow::processNextScan);
+            return;
+        }
+
         playSoundEvent(SOUNDEVENT_SERVERLOST);
         if(ttSettings->value(SETTINGS_DISPLAY_CHANEXCLUDE_DLG, SETTINGS_DISPLAY_CHANEXCLUDE_DLG_DEFAULT).toBool() == false)
         {
@@ -1720,15 +1743,23 @@ void MainWindow::processTTMessage(const TTMessage& msg)
         CommandComplete cmd_type = m_commands[m_current_cmdid];
 
         //if we're waiting for a result from this command then clear it
-        //since the command failed (this must be done before showing 
+        //since the command failed (this must be done before showing
         //and error message since the login will otherwise complete).
         m_commands.remove(m_current_cmdid);
+
+        if (m_isScanning)
+        {
+            addStatusMsg(STATUSBAR_BYPASS, tr("Command error for %1 (Error: %2). Skipping...")
+                         .arg(m_host.name).arg(msg.clienterrormsg.nErrorNo));
+            disconnectFromServer();
+            QTimer::singleShot(500, this, &MainWindow::processNextScan);
+            break;
+        }
 
         emit cmdError(msg.clienterrormsg.nErrorNo, msg.nSource);
 
         showTTErrorMessage(msg.clienterrormsg, cmd_type);
-    }
-    break;
+    }    break;
     case CLIENTEVENT_CMD_SUCCESS :
         emit cmdSuccess(msg.nSource);
     break;
@@ -2131,6 +2162,11 @@ void MainWindow::connectToServer()
 
     m_desktopaccess_entries.clear();
     getDesktopAccessList(m_desktopaccess_entries, m_host.ipaddr, m_host.tcpport);
+
+    if (m_isScanning)
+    {
+        m_timers[startTimer(10000)] = TIMER_CON_TIMEOUT;
+    }
 
     TT_Connect(ttInst, _W(m_host.ipaddr), m_host.tcpport, m_host.udpport,
                localtcpport, localudpport, m_host.encrypted);
@@ -2637,6 +2673,15 @@ void MainWindow::timerEvent(QTimerEvent *event)
     case TIMER_CHANGE_MEDIAFILE_POSITION :
         setMediaFilePosition();
         killLocalTimer(TIMER_CHANGE_MEDIAFILE_POSITION);
+        break;
+    case TIMER_CON_TIMEOUT :
+        killLocalTimer(TIMER_CON_TIMEOUT);
+        if (m_isScanning)
+        {
+            addStatusMsg(STATUSBAR_BYPASS, tr("Connection timeout for %1. Skipping...").arg(m_host.name));
+            disconnectFromServer();
+            QTimer::singleShot(500, this, &MainWindow::processNextScan);
+        }
         break;
     default :
         Q_ASSERT(0);
